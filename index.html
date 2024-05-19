@@ -75,10 +75,13 @@
                                         <button class="btn btn-outline-success" type="submit">Search</button>
                                     </form>
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+
                                         <button class="btn btn-Light me-md-2" type="button" id="navbarLoginBtn">Log
                                             In</button>
+
                                         <button class="btn btn-Light" type="button" id="navbarSignupBtn">Sign
                                             Up</button>
+
                                     </div>
                                 </div>
                             </div>
@@ -171,15 +174,24 @@
                                         <i class="fa-solid fa-envelope"></i>
                                         <input type="email" placeholder="Email">
                                     </div>
-                                    <div class="input-field">
+                                    <div class="input-field" id="passwordField">
                                         <i class="fa-solid fa-lock"></i>
                                         <input type="password" placeholder="Password">
                                     </div>
-                                    <p>Lost password? <a href="#">Click Here</a></p>
+                                    <p>
+                                        Lost password? 
+                                        <a href="#" id="forgotPasswordBtn">
+                                            Click Here
+                                        </a>
+                                    </p>
                                 </div>
                                 <div class="btn-field">
                                     <button type="button" id="formSignupBtn">Sign Up</button>
                                     <button type="button" id="formLoginBtn" class="disable">Log In</button>
+                                </div>
+                                <div class="btn-field">
+                                    <div></div>
+                                    <button type="button" id="formSendBtn" class="disable">Send</button>
                                 </div>
                             </form>
                         </div>
@@ -196,21 +208,52 @@
         // Code to handle form switching inside the modal
         let formSignupBtn = document.getElementById("formSignupBtn");
         let formLoginBtn = document.getElementById("formLoginBtn");
+        let formSendBtn = document.getElementById("formSendBtn");
         let nameField = document.getElementById("nameField");
         let formTitle = document.getElementById("formTitle");
+        let passField = document.getElementById("passwordField");
+        let forgotPass = document.getElementById("forgotPasswordBtn");
+        let navbarLogin = document.getElementById("navbarLoginBtn");
+        let navbarSignup = document.getElementById("navbarSignupBtn");
+
+        formSendBtn.onclick = function() {
+            passField.style.maxHeight = "60px";
+            formTitle.innerHTML = "Sign In";
+            formSignupBtn.classList.add("disable");
+            formLoginBtn.classList.add("disable");
+            formSendBtn.classList.remove("disable");
+            formSendBtn.style.maxHeight = "0";
+            
+        }
+
+        forgotPass.onclick = function() {
+            nameField.style.maxHeight = "0";
+            passField.style.maxHeight = "0";
+            formTitle.innerHTML = "Forgot Password";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+            formSendBtn.style.maxHeight = "60px";
+
+        }
 
         formLoginBtn.onclick = function () {
+
             nameField.style.maxHeight = "0";
+            passField.style.maxHeight = "60px";
             formTitle.innerHTML = "Log In";
             formSignupBtn.classList.add("disable");
             formLoginBtn.classList.remove("disable");
+            formSendBtn.style.maxHeight = "0";
         }
 
         formSignupBtn.onclick = function () {
             nameField.style.maxHeight = "60px";
+            passField.style.maxHeight = "60px";
             formTitle.innerHTML = "Sign Up";
             formSignupBtn.classList.remove("disable");
             formLoginBtn.classList.add("disable");
+            formSendBtn.style.maxHeight = "0";
+
         }
 
         // Code to handle navbar button clicks to show the modal
