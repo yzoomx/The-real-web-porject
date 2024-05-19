@@ -201,6 +201,7 @@ body {
   margin: auto;
 }
 
+/* this part and bellow contains the style for the login page */
 .container {
   width: 100%;
   padding: 20px;
@@ -241,6 +242,12 @@ body {
 
 .input-group {
   margin-bottom: 30px;
+  /* begin - center the input boxes in the login/signup pages */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the input fields horizontally */
+  /* end - center the input boxes in the login/signup pages */
+
 }
 
 .input-field {
@@ -318,3 +325,4 @@ form p a {
     padding: 30px 20px;
   }
 }
+/* the styling for the signin and signup ends here */
