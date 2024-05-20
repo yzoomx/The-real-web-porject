@@ -319,6 +319,9 @@ form p a {
   background: #eaeaea;
   cursor: not-allowed;
 }
+.disable{
+  display: none;
+}
 
 @media (max-width: 768px) {
   .form-box {
