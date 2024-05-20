@@ -21,6 +21,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.container-Em{
+  text-decoration: none;
+}
 
 .nav-top-bar {
   background-color: #fcf6f6;
@@ -45,6 +48,9 @@ body {
 .span-text {
   padding: 0 6px;
 }
+.er{
+  color: rgb(209, 95, 2);
+}
 
 .navbar-container {
   position: absolute;
@@ -62,6 +68,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 0;
 }
+
 
 .nav-item .nav-link {
   color: rgba(8, 8, 0, 0.685);
@@ -201,6 +208,10 @@ body {
   margin: auto;
 }
 
+.img-about{
+  margin-top: auto;
+}
+
 /* this part and bellow contains the style for the login page */
 .container {
   width: 100%;
@@ -305,6 +316,15 @@ form p a {
   cursor: pointer;
   transition: background 0.3s;
 }
+#navbarLoginBtn:hover{
+  background: #bf6c27;
+}
+#navbarSignupBtn:hover{
+  background: #bf6c27;
+}
+#navbarSignupBtn , #navbarLoginBtn{
+  margin: 10px;
+}
 
 .btn-field button:hover {
   background: #bf6c27;
@@ -329,3 +349,4 @@ form p a {
   }
 }
 /* the styling for the signin and signup ends here */
+
