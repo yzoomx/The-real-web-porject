@@ -12,7 +12,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -24,8 +25,9 @@
                 <div class="text-container">
                     <div class="text-content">
                         <a class="container-Em" href="mailto: Yousefaboimsail@gmail.com">
-                        <p class="para-text"><span class="span-text"><i class="fa-solid fa-envelope"></i>
-                                Yousefaboimsail@gmail.com</span></p></a>
+                            <p class="para-text"><span class="span-text"><i class="fa-solid fa-envelope"></i>
+                                    Yousefaboimsail@gmail.com</span></p>
+                        </a>
                         <p class="para-text"><span class="span-text"><i class="fa-solid fa-phone"></i>
                                 +90 (541) 158 31 53</span></p>
                     </div>
@@ -143,6 +145,23 @@
         </p>
     </section>
 
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="image/imgb-1.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">What Is Life?</h5>
+                    <p class="card-text">"What is Life?" by Erwin Schrödinger, based on his 1943 lectures at Trinity
+                        College, Dublin, explores the relationship between physics and biology, addressing fundamental
+                        questions about the nature of living organisms.</p>
+                        <i>Coming Soon</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container about-us-content">
         <div class="row">
             <div class="col-lg-3 col-md-12">
@@ -153,7 +172,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- Modal -->
     <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
@@ -182,7 +201,7 @@
                                         <input type="password" placeholder="Password">
                                     </div>
                                     <p>
-                                        Lost password? 
+                                        Lost password?
                                         <a href="#" id="forgotPasswordBtn">
                                             Click Here
                                         </a>
@@ -219,42 +238,42 @@
         let navbarLogin = document.getElementById("navbarLoginBtn");
         let navbarSignup = document.getElementById("navbarSignupBtn");
 
-        formSendBtn.onclick = function() {
-        passField.style.maxHeight = "60px";
-        formSendBtn.style.maxHeight = "0";
-        formTitle.innerHTML = "Log In";
-        formSignupBtn.classList.remove("disable");
-        formLoginBtn.classList.remove("disable");
-    }
+        formSendBtn.onclick = function () {
+            passField.style.maxHeight = "60px";
+            formSendBtn.style.maxHeight = "0";
+            formTitle.innerHTML = "Log In";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+        }
 
-    forgotPass.onclick = function() {
-        nameField.style.maxHeight = "0";
-        passField.style.maxHeight = "0";
-        formSendBtn.style.maxHeight = "60px";
-        formTitle.innerHTML = "Forgot Password";
-        formSignupBtn.classList.add("disable");
-        formLoginBtn.classList.add("disable");
-        formSendBtn.classList.remove("disable");
-    }
+        forgotPass.onclick = function () {
+            nameField.style.maxHeight = "0";
+            passField.style.maxHeight = "0";
+            formSendBtn.style.maxHeight = "60px";
+            formTitle.innerHTML = "Forgot Password";
+            formSignupBtn.classList.add("disable");
+            formLoginBtn.classList.add("disable");
+            formSendBtn.classList.remove("disable");
+        }
 
-    formLoginBtn.onclick = function () {
-        nameField.style.maxHeight = "0";
-        formSendBtn.style.maxHeight = "0";
-        passField.style.maxHeight = "60px";
-        formTitle.innerHTML = "Log In";
-        formSignupBtn.classList.remove("disable");
-        formLoginBtn.classList.remove("disable");
-        formSendBtn.classList.remove("disable");
-    }
+        formLoginBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            formSendBtn.style.maxHeight = "0";
+            passField.style.maxHeight = "60px";
+            formTitle.innerHTML = "Log In";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+            formSendBtn.classList.remove("disable");
+        }
 
-    formSignupBtn.onclick = function () {
-        nameField.style.maxHeight = "60px";
-        passField.style.maxHeight = "60px";
-        formSendBtn.style.maxHeight = "0";
-        formTitle.innerHTML = "Sign Up";
-        formSignupBtn.classList.remove("disable");
-        formLoginBtn.classList.remove("disable");
-    }
+        formSignupBtn.onclick = function () {
+            nameField.style.maxHeight = "60px";
+            passField.style.maxHeight = "60px";
+            formSendBtn.style.maxHeight = "0";
+            formTitle.innerHTML = "Sign Up";
+            formSignupBtn.classList.remove("disable");
+            formLoginBtn.classList.remove("disable");
+        }
 
 
         // Code to handle navbar button clicks to show the modal
