@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="LoginSignup.html">
+    <link rel="stylesheet" href="index.html">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
                     <div class="navbar-container">
                         <nav class="navbar navbar-expand-lg">
                             <div class="container-fluid">
-                                <a class="navbar-brand" href="#">
+                                <a class="navbar-brand" href="index.html">
                                     <h3 class="heading-logo">Read<span class="er">er</span></h3>
                                 </a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -85,7 +85,7 @@
                                     </div>
                                     <div class="shopping-nav">
                                         <a href="Cart.html">
-                                        <i id="cart" class="fa-solid fa-basket-shopping"></i>
+                                            <i id="cart" class="fa-solid fa-basket-shopping"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous"></script>
@@ -154,9 +154,7 @@
                 let formTitle = document.getElementById("formTitle");
                 let passField = document.getElementById("passwordField");
                 let forgotPass = document.getElementById("forgotPasswordBtn");
-                let navbarLogin = document.getElementById("navbarLoginBtn");
-                let navbarSignup = document.getElementById("navbarSignupBtn");
-        
+
                 formSendBtn.onclick = function () {
                     passField.style.maxHeight = "60px";
                     formSendBtn.style.maxHeight = "0";
@@ -164,7 +162,7 @@
                     formSignupBtn.classList.remove("disable");
                     formLoginBtn.classList.remove("disable");
                 }
-        
+
                 forgotPass.onclick = function () {
                     nameField.style.maxHeight = "0";
                     passField.style.maxHeight = "0";
@@ -174,7 +172,7 @@
                     formLoginBtn.classList.add("disable");
                     formSendBtn.classList.remove("disable");
                 }
-        
+
                 formLoginBtn.onclick = function () {
                     nameField.style.maxHeight = "0";
                     formSendBtn.style.maxHeight = "0";
@@ -184,7 +182,7 @@
                     formLoginBtn.classList.remove("disable");
                     formSendBtn.classList.remove("disable");
                 }
-        
+
                 formSignupBtn.onclick = function () {
                     nameField.style.maxHeight = "60px";
                     passField.style.maxHeight = "60px";
@@ -193,61 +191,73 @@
                     formSignupBtn.classList.remove("disable");
                     formLoginBtn.classList.remove("disable");
                 }
-        
-        
+
+
                 // Code to handle navbar button clicks to show the modal
                 let navbarLoginBtn = document.getElementById("navbarLoginBtn");
                 let navbarSignupBtn = document.getElementById("navbarSignupBtn");
-        
+
                 navbarLoginBtn.onclick = function () {
                     formLoginBtn.click();
                     new bootstrap.Modal(document.getElementById('authModal')).show();
                 }
-        
+
                 navbarSignupBtn.onclick = function () {
                     formSignupBtn.click();
                     new bootstrap.Modal(document.getElementById('authModal')).show();
                 }
             </script>
-             <div class="container mt-5">
-                <div class="row">
-
-<div class="col-lg-3 col-md-6 mb-4">
-    <div class="card" style="width: 18rem;">
-        <a href="TrueCrime.html">
-            <img src="image/imgb-6.jpg" class="card-img-top" alt="Ring book">
-        </a>
-        <div class="card-body">
-            <h5 class="card-title">Ring</h5>
-            <p class="card-text">A Japanese horror novel about a cursed videotape that kills anyone who
-                watches it within seven days.</p>
+            <div class="container mt-5">
+                <div class="row" style="margin-top: 100px;">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <a href="TrueCrime.html">
+                                <img src="image/imgb-16.jpg" class="card-img-top" alt="I'll Be Gone in the Dark Book">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">I'll Be Gone in the Dark</h5>
+                                <p class="card-text">One Woman's Obsessive Search for the Golden State Killer by Michelle McNamara</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <a href="TrueCrime.html">
+                                <img src="image/imgb-6.jpg" class="card-img-top" alt="Ring book">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Ring</h5>
+                                <p class="card-text">A Japanese horror novel about a cursed videotape that kills anyone who watches it within seven days.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <a href="TrueCrime.html">
+                                <img src="image/imgb-7.jpg" class="card-img-top" alt="In Cold Blood Book">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">In Cold Blood</h5>
+                                <p class="card-text">A non-fiction novel detailing the brutal murder of a Kansas family and the subsequent investigation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100" style="width: 18rem;">
+                            <a href="TrueCrime.html">
+                                <img src="image/imgb-8.webp" class="card-img-top" alt="Helter Skelter Book">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Helter Skelter</h5>
+                                <p class="card-text">A meticulously researched account of the Manson Family murders and the subsequent trial.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="col-lg-3 col-md-6 mb-4">
-    <div class="card" style="width: 18rem;">
-        <a href="TrueCrime.html">
-            <img src="image/imgb-7.jpg" class="card-img-top" alt="In Cold Blood Book">
-        </a>
-        <div class="card-body">
-            <h5 class="card-title">In Cold Blood</h5>
-            <p class="card-text">A non-fiction novel detailing the brutal murder of a Kansas family and the
-                subsequent investigation.</p>
-        </div>
-    </div>
-</div>
-
-<div class="col-lg-3 col-md-6 mb-4">
-    <div class="card" style="width: 18rem;">
-        <a href="TrueCrime.html">
-            <img src="image/imgb-8.webp" class="card-img-top" alt="Helter Skelter Book">
-        </a>
-        <div class="card-body">
-            <h5 class="card-title">Helter Skelter</h5>
-            <p class="card-text">A meticulously researched account of the Manson Family murders and the
-                subsequent trial.</p>
-        </div>
-    </div>
-</div>
+    
 </body>
+
 </html>

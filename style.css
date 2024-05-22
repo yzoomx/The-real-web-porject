@@ -78,7 +78,6 @@ body {
   color: rgb(0, 134, 244);
 }
 #cart{
-  
   color: #d4813c;
 }
 .home-section {
@@ -88,7 +87,7 @@ body {
 
 .home-content {
   width: 100%;
-  height: 84vh;
+  height: 85vh;
   background-position: right;
   background-size: cover;
   display: flex;
@@ -105,12 +104,12 @@ body {
 
 .img-2 {
   background-image: linear-gradient(rgba(196, 86, 86, 0.5), rgba(0, 0, 0, 0.5)),
-    url("image/img-2.jpg");
+    url("image/img-2.jpeg");
 }
 
 .img-3 {
   background-image: linear-gradient(rgba(196, 86, 86, 0.5), rgba(0, 0, 0, 0.5)),
-    url("image/img-3.jpg");
+    url("image/img-3.jpeg");
 }
 
 .content-home {
@@ -357,6 +356,7 @@ form p a {
   margin-right: 30px;
   margin-left: 30px;
   padding: 15px;
+  height: 100%;
 }
 .card-body{
   padding: 15px;
@@ -364,4 +364,30 @@ form p a {
 
 .container-book{
   background: none;
+}
+
+.text-container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+.fa-github{
+  color: rgb(255, 193, 7);
+}
+.fa-instagram{
+  color: rgb(255, 193, 7);
+}
+.fa-linkedin{
+  color: rgb(255, 193, 7);
+}
+.fa-whatsapp{
+  color: rgb(255, 193, 7);
+}
+.fa-facebook{
+  color: rgb(255, 193, 7);
+}
+.copy{
+  margin-left: 125px;
+  color: rgb(255, 193, 7);
+
 }
