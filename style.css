@@ -4,8 +4,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+html, body {
+  height: 100%;
+}
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(240, 240, 240) !important;
   /*height: 200vh;*/
 }
@@ -354,6 +359,36 @@ form p a {
 
 .card{
   margin-right: 30px;
+  margin-left:30px;
+  padding: 15px;
+  height: 100%;
+}
+.card-1{
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 15px;
+  height: 100%;
+}
+.card-2{
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 15px;
+  height: 100%;
+}
+.card-3{
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 15px;
+  height: 100%;
+}
+.card-4{
+  margin-right: 30px;
+  margin-left: 30px;
+  padding: 15px;
+  height: 100%;
+}
+.card-5{
+  margin-right: 30px;
   margin-left: 30px;
   padding: 15px;
   height: 100%;
@@ -371,23 +406,25 @@ form p a {
   justify-content: space-between;
   align-items: center;  
 }
-.fa-github{
+#social-links{
   color: rgb(255, 193, 7);
+  margin-right: 10px;
 }
-.fa-instagram{
-  color: rgb(255, 193, 7);
-}
-.fa-linkedin{
-  color: rgb(255, 193, 7);
-}
-.fa-whatsapp{
-  color: rgb(255, 193, 7);
-}
-.fa-facebook{
-  color: rgb(255, 193, 7);
-}
+
 .copy{
   margin-left: 125px;
   color: rgb(255, 193, 7);
 
+}
+
+#accordionExample{
+  margin-top: 200px;
+}
+.content {
+  flex: 1;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
 }

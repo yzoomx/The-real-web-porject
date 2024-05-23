@@ -14,10 +14,14 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .body {
+            background: rgb(184, 110, 21);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="content">
     <div class="header">
         <div class="nav-top-bar">
             <div class="container-fluid gx-0">
@@ -217,56 +221,158 @@
                     new bootstrap.Modal(document.getElementById('authModal')).show();
                 }
             </script>
-            <div class="content-1-text">
-                <div class="About-text">
-                    <p></p>
-                </div>
-            </div>
-            </div>
-            <footer class="bg-dark text-white pt-5 pb-4">
-                <div class="container-2. text-center-2 text-md-left">
-                    <div class="row text-center-2 text-md-left">
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ml-3">
-                            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Reader</h5>
-                            <p>Explore boundless worlds with our curated collection of books. Immerse yourself in stories that
-                                captivate, educate, and inspire. Find your next adventure on our shelves, and let the pages
-                                ignite your imagination. Happy reading!</p>
-                                
-                        </div>
-                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-3">
-                            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Info</h5>
-                            <p>
-                                <a href="Q&A.html" class="text-white" style="text-decoration: none;">Q&A</a>
-                            </p>
 
-                            <p>
-                                <a href="About.html" class="text-white" style="text-decoration: none;">About</a>
-                            </p>
-                            <p>
-                                <a href="contectus.html" class="text-white" style="text-decoration: none;">Contact Us</a>
-                            </p>
-        
-                        </div>
-                        <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-3">
-                            <div class="text-container2">
-                                <div  class="social-links ">
-                                    <a id="social-links" href="https://github.com/yzoomx" target="_blank"><i
-                                            class="fa-brands fa-github fa-xl"></i></a>
-                                    <a id="social-links" href="" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                                    <a id="social-links" href="https://www.linkedin.com/in/yousef-aboismail-8574a1252/" target="_blank"><i
-                                            class="fa-brands fa-linkedin fa-xl"></i></a>
-                                    <a id="social-links" href="https://wa.me/905411583153" target="_blank"><i
-                                            class="fa-brands fa-whatsapp fa-xl"></i></a>
-                                    <a id="social-links" href="" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                                </div>
-                            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Q: What types of books do you sell? </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: We offer a wide selection of books, including Random Books, Fiction, True Crime, Horror.
+                            Our inventory is constantly updated, so be sure to check back often for new arrivals!
                         </div>
                     </div>
-                            <p class="copy">&copy; 2024 Reader. All Rights Reserved.</p>
-        
                 </div>
-        
-            </footer>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Q: Do you sell new or used books? </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: We primarily sell New books.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Q: Do you have a physical store? </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: No, we are an online-only bookshop. This allows us to offer a wider selection and
+                            competitive prices.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Q: Do you offer international shipping? </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: Yes, we offer international shipping World Wide. Shipping costs and
+                            delivery times vary depending on the destination.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Q: How can I contact customer support? </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: You can reach our customer support team by Email, Phone. We aim to respond to all
+                            inquiries within 2 Basins day.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Q: What is your return policy? </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: We accept returns within 30 days of delivery for books in their
+                            original condition. Please see our Returns & Refunds page for more details.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            Q: How do I place an order?</button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: Simply browse our catalog, add items to your cart, and proceed to checkout. You'll need
+                            to provide your shipping address and payment information.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Q: Can I track my order? </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            A: Yes, you'll receive a tracking number once your order has shipped, allowing you to track its progress.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container-2. text-center-2 text-md-left">
+            <div class="row text-center-2 text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto ml-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Reader</h5>
+                    <p>Explore boundless worlds with our curated collection of books. Immerse yourself in stories that
+                        captivate, educate, and inspire. Find your next adventure on our shelves, and let the pages
+                        ignite your imagination. Happy reading!</p>
+                        
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Info</h5>
+                    <p>
+                        <a href="Q&A.html" class="text-white" style="text-decoration: none;">Q&A</a>
+                    </p>
+                    <p>
+                        <a href="About.html" class="text-white" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="contectus.html" class="text-white" style="text-decoration: none;">Contact Us</a>
+                    </p>
+
+                </div>
+                <div  class="col-md-2 col-lg-2 col-xl-2 mx-auto ml-3">
+                    <div class="text-container2">
+                        <div  class="social-links ">
+                            <a id="social-links" href="https://github.com/yzoomx" target="_blank"><i
+                                    class="fa-brands fa-github fa-xl"></i></a>
+                            <a id="social-links" href="" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                            <a id="social-links" href="https://www.linkedin.com/in/yousef-aboismail-8574a1252/" target="_blank"><i
+                                    class="fa-brands fa-linkedin fa-xl"></i></a>
+                            <a id="social-links" href="https://wa.me/905411583153" target="_blank"><i
+                                    class="fa-brands fa-whatsapp fa-xl"></i></a>
+                            <a id="social-links" href="" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <p class="copy">&copy; 2024 Reader. All Rights Reserved.</p>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
