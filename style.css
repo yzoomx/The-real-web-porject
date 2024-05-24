@@ -116,6 +116,10 @@ body {
   background-image: linear-gradient(rgba(196, 86, 86, 0.5), rgba(0, 0, 0, 0.5)),
     url("image/img-3.jpeg");
 }
+.img-4 {
+  background-image: linear-gradient(rgba(196, 86, 86, 0.5), rgba(0, 0, 0, 0.5)),
+    url("image/imgb-21.jpg");
+}
 
 .content-home {
   display: flex;
@@ -424,7 +428,9 @@ form p a {
   flex: 1;
 }
 .footer {
+  width: 100%;
   background-color: #333;
   color: #fff;
   text-align: center;
 }
+
